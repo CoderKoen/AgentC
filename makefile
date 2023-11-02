@@ -2,7 +2,7 @@ CC = g++
 FILES = src/main.cpp
 OUT_DIR = bin
 OUT_NAME = agentc.elf
-FLAGS = -Wall
+FLAGS = -Wall -lGL -lGLU -lglut
 
 agentc:
 	$(CC) $(FILES) -o $(OUT_DIR)/$(OUT_NAME) $(FLAGS)
